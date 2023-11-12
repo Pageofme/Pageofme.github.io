@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Video test</title>
+</head>
+<body>
+  <h1>Video</h1>
+    <video src="Stung.mov" width="600" controls>  
+    </video>
+  <h1>Audio</h1>
+     <audio src="CTCHT.mp3" controls>Hello</audio>
+</body>
+</html>
