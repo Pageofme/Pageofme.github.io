@@ -1,0 +1,20 @@
+body{
+	background-image: url(../images/hien.jpg);
+/*	background-repeat:no-repeat ;*/
+	background-position: 1% 5%;
+}
+button{
+	background: green;
+}
+audio{
+/*	background-image: linear-gradient(to right,red,yellow);*/
+}
+h1{
+	color: black;
+}
+details{
+    background: #F006F8;
+	display: inline-block;
+	color: black;
+	border-radius: 20px;
+}
