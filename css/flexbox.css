@@ -1,0 +1,17 @@
+.flex-container{
+	display: flex;
+	background: #f1f1f1;
+}
+.flex-container > div{
+	background: dodgerblue;
+	font-size: 20px;
+	width: 100px;
+	margin: 10px;
+	line-height: 75px;
+	text-align: center;
+}
+a[href$=".org"]{
+	background: red;
+	text-decoration: none;
+	font-size: 40px;
+}

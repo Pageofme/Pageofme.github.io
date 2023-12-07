@@ -1,0 +1,34 @@
+/*.btn{
+	font-size: 30px;
+	}
+.btn-danger{
+	background: red;
+}
+.btn-success{
+	background: green;
+}*/
+a:link{
+	background: red;
+}
+a:visited{
+	background: blueviolet;
+}
+a:hover{
+	background: yellow;
+}
+a:active{
+	background: red;
+}
+a:focus{
+	background: green;
+}
+::selection {
+  background: #ff00ff;
+}
+  div {
+  background: url("../images/hoangdz.jpg") 0 0 no-repeat;
+  background-size: auto 75%;
+  border: 2px dashed #9799a7;
+  height: 240px;
+  width: 200px;
+}

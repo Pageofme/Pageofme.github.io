@@ -1,0 +1,18 @@
+#h2{
+  text-align: center;
+  line-height: 50px;
+  color: blueviolet;
+}
+div{
+  background-image: url('../images/hoangdz.jpg');
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity:  1;
+}
+/*h2{
+  display: block;
+  align-content: center;
+  line-height: 50px;
+}*/
