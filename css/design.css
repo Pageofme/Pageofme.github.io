@@ -72,8 +72,8 @@ button{
   height: 60px;
   border-radius: 15px;
   cursor: pointer;
-  background: green;
-  box-shadow: 8px 8px 0 lightgreen;
+  background: #EB7A02;
+  box-shadow: 8px 8px 2px #FF3700;
   -webkit-transition: all .1s linear;
   -moz-transition: all .1s linear;
   -ms-transition: all .1s linear;
@@ -81,7 +81,7 @@ button{
   transition: all .1s linear;
 }
 button:focus{
-  border: 5px solid red;
+  border: 5px solid darkred;
 }
 button:active{
   -webkit-transform: translate(5px,5px);
@@ -89,7 +89,7 @@ button:active{
   -ms-transform: translate(5px,5px);
   -o-transform: translate(5px,5px);
   transform: translate(5px,5px);
-  box-shadow: 5px 5px lightgreen;
+  box-shadow: 5px 5px 2px #FF3700;
 }
 h1{
   text-align: center;
