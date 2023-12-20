@@ -10,10 +10,10 @@ body{
     height: 600px;
 		border:5px solid black;
 		margin:0 auto;
-    background-color: #8e68ff;
+    background-color: #6F5DA7;
     background-image: url('');
     background-repeat: no-repeat;
-    color:#FFFFFF;
+    color:#F8FF36;
     text-align: center;
     background-size: 100%;
     margin-bottom:25px;
@@ -32,4 +32,9 @@ img{
 }
 img:hover,img:focus{
 	opacity: 1;
+}
+h1{
+	color: #091445;
+	text-align: center;
+
 }
