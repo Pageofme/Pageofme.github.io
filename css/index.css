@@ -34,7 +34,7 @@ footer{
 }
 @media all and (min-width:772px){
    .grid{
-   	grid-template-columns: 45% 45%;
+   	grid-template-columns: 50% 50%;
    }
    img{
    	border-radius: 50%;
