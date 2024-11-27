@@ -1,0 +1,319 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Header */
+
+.logo-nav {
+    display: flex; /* Sắp xếp ngang */
+    align-items: self-end; /* Dán nav xuống đáy */
+    justify-content: space-between; /* Đảm bảo phân bố đều giữa logo và nav */
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng kích thước */
+}
+.logo-nav img{
+    max-width: 20vw;
+    height: auto;
+    margin-right: 2vw;
+}
+.link{
+    display: flex; /* Đặt các liên kết ngang hàng */
+    flex-grow: 1;/* Để nav chiếm hết khoảng trống còn lại */
+    justify-content: flex-end;
+    gap: 15px;
+    background-color: #7D7DF7;
+    justify-content: space-around;
+    padding: 10px 15px;
+    }
+.link a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s;
+    bottom: 0;  
+}
+.link a:hover{
+    color: red;
+}
+
+/* Section: Smart Home */
+.smart-home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+/*    padding: 20px;*/
+    background-color: #f8f9fa;;
+}
+
+.smart-home h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5vw;
+}
+
+.smart-home p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+.smart-home img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.smart-home .text-content {
+    max-width: 75%;
+}
+
+
+/* Section: Best Seller */
+.best-seller {
+    padding: 20px;
+    max-width: 50vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.best-seller h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2EC5C0;
+}
+.products {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: inherit;
+    gap: 20px;
+}
+.product {
+/*    display: flex;*/
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: inherit;
+
+/*    justify-content: space-between;*/
+    background-color:#f8f9fa;
+}
+.product img {
+    aspect-ratio: 1/1;   /* Tỷ lệ 1:1, luôn vuông */
+    width: 20vw; /* Chiếm toàn bộ chiều rộng khung chứa */
+    height: auto; /* Tự điều chỉnh chiều cao */
+    margin-bottom: 10px;
+    object-fit: cover;  /* Đảm bảo không méo hình */
+    margin-left: 5px;
+}
+.buy{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.namePro{
+    font-weight: bold;
+}
+.old_price{
+    text-decoration: line-through;
+}
+.new_price {
+    color: red;
+    font-weight: bold;
+}
+.product button {
+    background-color: #FD7A0F;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px #FF3700;
+    width: 50%;
+    cursor: pointer;
+    transition: background-color .3s linear;
+}
+.product button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+/* Section: Sale Off */
+.sale-off {
+    padding: 20px;
+}
+.sale-off h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2EC5C0;
+}
+.sale-off table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+.sale-off table, .sale-off th, .sale-off td {
+    border: 2px solid #ccc;
+}
+.sale-off th, .sale-off td {
+    border: 1px solid rgba(46, 197, 192, 0.5);
+    text-align: left;
+    padding: 8px;
+}
+.sale-off th {
+    background-color: #2EC5C0;
+    color: white;
+    text-align: center;
+}
+
+/* Wrapper cho cả hai section */
+.best-seller-sale-off {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch; /* Đảm bảo cả hai section có chiều cao đồng nhất */
+    gap: 20px; /* Khoảng cách giữa hai section */
+    background-color: #fff;
+}
+
+/* Đặt kích thước cho từng section */
+/* BEST SELLER chỉ chiếm không gian cố định */
+
+
+/* SALE OFF tự mở rộng để chiếm phần trống */
+.sale-off {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+/* Chỉnh chiều cao bảng sale-off để khớp nội dung */
+.sale-off table {
+    height: 100%;
+    margin: 10px 0;
+    border-collapse: collapse;
+}
+
+/* Responsive */
+/*@media (min-width: 800px) {
+    .best-seller-sale-off {
+        flex-direction: column;
+    }
+}*/
+
+/* Section: Consultation */
+.consultation {
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+.consultation h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2EC5C0;
+}
+.consultation-intro {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.div_consul{
+    display: flex;
+    flex-direction: row;
+    max-height: 60vh;
+    overflow: hidden;
+}
+.consul_img img{
+    width: 50vw;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.consul_form{
+    width: 50vw;
+    height: auto;
+}
+.consultation form {
+    max-width: 40vw;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+}
+
+.consultation label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FD7A0F;
+}
+.consultation input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.consultation .buttons {
+    display: flex;
+    justify-content: center;
+}
+.consultation button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #FD7A0F;
+    margin-right: 5px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.consultation button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2EC5C0;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+footer p {
+    margin: 5px 0;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
