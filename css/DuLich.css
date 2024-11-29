@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+/*	font-family: sans-serif;*/
+	background-color: #fff;
+    display: flex;
+    line-height: 1.6;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-left:5% ;
+    font-size: 16px;
+}
+
+/*Header*/
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.logo{
+	height: 10vh;
+	width: auto;
+	aspect-ratio: 1/1;
+/*	flex-grow: 1;*/
+}
+
+.logo img{
+	height: 10vh;
+	width: auto;
+	aspect-ratio: 1/1;
+}
+
+nav{
+	width: 40vw;
+/*	flex-grow: 3;*/
+}
+
+nav a{
+/*	font-style: italic;*/
+	text-decoration: none;
+	color: #4E93B1;
+	transition: all 0.3s;
+}
+nav a:hover{
+	color: red;
+	font-weight: bold;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+	margin: 2%;
+	justify-content: space-around;
+	list-style-type: none;
+	padding-top: 2%;
+}
+
+.search{
+	width: 20vw;
+	display: flex; /* Kích hoạt flexbox */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin: 2% 0;
+}
+
+.search button{
+	background-color: black;
+	color: white;
+	padding: 0 2px;
+	box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search input{
+	padding-left: 5px;
+}
+
+/*First Section*/
+#first_section{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+    align-items: stretch; /* Đảm bảo các thành phần con có cùng chiều cao */
+	margin-right: 15px;
+    margin-bottom: 10px;
+    height: 500px; /* Chiều cao tự động theo nội dung */
+    box-sizing: border-box;
+}
+
+#first_section h1{
+	color:#4E93B1 ;
+}
+#first_left{
+    flex:1;
+    height:100%;
+    width: auto;
+	margin-right: 10px;
+}
+#first_left img{
+    height: 100%;
+    width: auto;
+}
+#first_right{
+	flex: 1;
+    height: 100%;
+    width: auto;
+    overflow:hidden;
+/*    overflow-y: auto; /* Thêm thanh cuộn nếu nội dung vượt quá */*/
+}
+/*.first_right ~ div{ Cùng cấp
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+}*/
+
+.allInfor{
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+    height: 20%;
+    margin-top: 15px;
+}
+
+
+.allInfor img{
+	aspect-ratio: 4/3;
+	height: 100%;
+    width: auto;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+.price{
+	color: #FD7A0F;
+	font-weight: bold;
+}
+/*Second section*/
+
+.title_2{
+    color: #4E93B1;
+    margin-top: 15px;
+}
+
+#second_section{
+    height: 500px;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+#second_left{
+    height: 100%;
+    width: 50%;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+#second_left img{
+    height: 100%;
+    width: auto;
+    margin-right: 10px;
+}
+#second_right{
+    height: 100%;
+    width: 45%;
+    background-color: #E6E2E1;
+    padding-right: 20px;
+    justify-items: center;
+}
+/*#form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}*/
+
+#second_right h3{
+    color: #FD7A0F;
+    margin: 20px 0;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/*    justify-content: start;*/
+    gap: 30px; /* Khoảng cách giữa các dòng */
+    width: 90%; /* Đặt chiều rộng cho form */
+    margin-top: 15px; 
+}
+
+.form-row {
+    display: flex; /* Đặt label và input ngang hàng */
+    justify-content: start; /* Tạo khoảng cách giữa label và input */
+    align-items: center; /* Canh giữa theo chiều dọc */
+    width: 100%; /* Form-row chiếm 100% chiều rộng của form */
+/*    gap: 5px; /* Khoảng cách giữa label và input */*/
+}
+
+.form-row label {
+    width: 30%; /* Đặt chiều rộng cố định cho label */
+    text-align: left; /* Căn chữ sang phải */
+}
+
+.form-row input,
+.form-row select {
+    width: 55%; /* Input và select chiếm phần còn lại */
+    padding: 5px; /* Tăng không gian bên trong */
+    text-align: left;
+}
+
+#form button{
+    background-color: #FD7A0F;
+    color: white;
+    width: 120px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    box-shadow: 2px 2px 5px rgba(253, 122, 15,0.5) ; /*box-shadow: offset-x offset-y blur-radius spread-radius color;*/
+}
+
+#form button:hover{
+    background-color: green;
+}
+
+#form button:active{
+    transform: translateY(5px);
+}
+
+/*Third section*/
+#third_section{
+    height: 400px;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    gap: 2%;
+    margin:0 3% ;
+}
+.title_3{
+    color: #4E93B1;
+    margin-top: 15px;
+    margin-bottom: -20px;
+}
+
+#third_section > div{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.idol img{
+    border-radius: 100px;
+}
+
+.idol p{
+    text-align: center;
+}
+
+footer{
+    width: inherit;
+    height: auto;
+    padding-left: 20%;
+    background-color: #08A0C5;
+    color: white;
+}
+
+#footer{
+    display: flex;
+    width: 100%;
+    font-size: 0.8em;
+    justify-content: center;
+}
+
+#footer_left{
+    width: 50%;
+}
+
+#footer_right{
+    width: 50%;
+}
+
+#footer p{
+    margin: 10px 0;
+}
+
+.copyright{
+   padding-left:20% ;
+}
+
+/* Responsive layout cho màn hình nhỏ */
+@media all and (max-width: 768px) {
+    .first_section {
+        flex-direction: column; /* Chuyển từ hàng ngang sang dọc */
+    }
+
+    .first_left,
+    .first_right {
+        width: 100%; /* Đảm bảo mỗi phần tử chiếm toàn bộ chiều rộng */
+        margin: 0; /* Xóa margin gây khoảng cách không cần thiết */
+    }
+
+    .first_right div {
+        margin-bottom: 15px; /* Tạo khoảng cách giữa các mục bên phải */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header .first {
+    color: rgb(218, 92, 19);
+    font-style: italic;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.header img {
+    height: 100px;
+    width: 100px;
+}
+.header .form {
+    margin-right: 40px;
+    margin-top: 40px;
+}
+.header .form button {
+    background-color: black;
+    color: white;
+}
+
+
+.menu ul {
+    list-style-type: none; /* Remove default bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display the list items horizontally */
+    justify-content: space-around; /* Space out the items evenly */
+  }
+
+  .menu ul li {
+    margin: 0 15px; /* Margin between list items */
+  }
+  .menu {
+    padding: 10px; /* Some padding around the menu */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 40px;
+  }  
+
+  .menu ul li a {
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Increase font size */
+    font-weight: bold; /* Bold text */
+  }
+  
+  .first-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+ /* Left banner image */
+.left-banner img {
+    height: auto;
+    height: 600px;
+    margin: 30px;
+  }
+  
+  /* Right content */
+  .right-content {
+    width: 500px;
+    margin: 10px;
+  }
+  
+  .welcome-heading {
+    font-size: 24px;
+    color: #0066cc;
+    margin-bottom: 20px;
+  }
+  
+  .room-info, .food-info {
+    /* align-items: center; */
+    margin-bottom: 20px;
+  }
+  
+  .room-info img, .food-info img {
+    float: left;
+    width: 200px; /* Image size */
+    height: auto;
+    margin-right: 10px; 
+  }
+
+  .room-title {
+    font-weight: bold;
+  }
+  .right-content .room-price {
+    color:orange;
+  }
+  
+  .room-price, .room-discount, .food-description, .food-ordering {
+    margin: 30px 0;
+  }
+  
+  .room-info p, .food-info p {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .lefooter {
+    background-color: rgb(36, 206, 212) ;
+    /* text-align: center; */
+    padding: 10px;
+    color: white;
+    /* display: flex; */
+}
+
+
+  .lefooter .left {
+    float: left;
+    margin-left: 30%;
+    padding-right: 15%;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #0099FF;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+
+
+  .lefooter h5 {
+    text-align: center;
+    background-color: rgb(36, 206, 212) ;
+    /* text-align: center; */
+    padding: 10px;
+    color: white;
+  }
+  .feedback-title h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #0099FF;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.feedback-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feedback-item {
+    text-align: center;
+    width: 22%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.customer-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.rating img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.customer-name {
+    font-size: 18px;
+    margin: 15px 0 10px;
+    font-weight: bold;
+}
+
+.feedback-text {
+    font-size: 14px;
+    color: #666;
+}
+.hotel-booking-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.hotel-image-container {
+    width: 60%;
+}
+
+.hotel-image {
+    width: 100%;
+    height: auto;
+}
+
+.booking-form-container {
+    width: 35%;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.booking-form-title {
+    color: #f27522;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.booking-field {
+    margin-bottom: 15px;
+}
+
+.booking-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.booking-input {
+    width: 400px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-button-container {
+    text-align: center;
+}
+
+.booking-button {
+    background-color: #f27522;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-button:hover {
+    background-color: #e65b00;
+}
+*/
